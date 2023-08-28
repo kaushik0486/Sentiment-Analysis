@@ -1,0 +1,22 @@
+
+**solution.py:**
+
+```python
+def analyze_sentiment(text):
+    # Simple sentiment analysis based on predefined keywords and patterns
+    positive_keywords = ["love", "brilliant", "excellent"]
+    negative_keywords = ["hate", "terrible", "awful"]
+
+    for word in positive_keywords:
+        if word in text:
+            return "Positive sentiment"
+
+    for word in negative_keywords:
+        if word in text:
+            return "Negative sentiment"
+
+    return "Neutral sentiment"
+
+input_text = "I absolutely loved the movie! The acting was brilliant."
+sentiment = analyze_sentiment(input_text)
+print("Sentiment:", sentiment)
